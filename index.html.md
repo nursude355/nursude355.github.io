@@ -1,9 +1,891 @@
 <!DOCTYPE html>
-<html>
-   <head>
-sudenur karaoglu
-  </head>
-   <body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sudenur Karaoglu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 6px;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #50577A;
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            font-family: Montserrat;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        section {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            text-align: center;
+        }
+
+        .btn-large {
+
+            font-size: 2rem;
+            padding: 2.2rem 1.6rem;
+
+        }
+
+        .btn {
+
+            margin-top: 2rem;
+            font-weight: 400;
+            display: inline-block;
+            border: 2px solid #fff;
+            border-radius: .4rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-social {
+
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        .btn-outline a {
+            color: #fff;
+        }
+
+        .btn-outline {
+            color: #fff;
+            border-color: #fff;
+            background-color: transparent;
+
+
+        }
+
+        .btn.btn-outline.btn-social a i {
+            color: #fff;
+        }
+
+
+        .btn-outline:hover {
+            color: #212529;
+            background-color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #1abc9b;
+            border-color: #1abc9b;
+            padding: 1.2rem 1rem;
+            color: white;
+
+        }
+
+        .btn-primary:hover {
+            background-color: #128f76;
+            border-color: #128f76;
+        }
+
+        .img-fluid {
+            max-width: 256px;
+            height: auto;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+
+        }
+
+        .container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+
+
+        }
+
+
+
+
+        .col {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0 auto;
+
+        }
+
+
+        @media (min-width:576px) {
+            .container {
+                max-width: 540px;
+            }
+
+            html {
+                font-size: 7px;
+            }
+
+
+        }
+
+        @media (min-width:768px) {
+            .container {
+                max-width: 720px;
+            }
+
+            html {
+                font-size: 8px;
+            }
+
+            .col {
+                width: 50%;
+            }
+        }
+
+        @media (min-width:992px) {
+            .container {
+                max-width: 960px;
+            }
+
+            html {
+                font-size: 9px;
+            }
+
+            .col {
+                width: 33.333%;
+            }
+        }
+
+        @media (min-width:1200px) {
+            .container {
+                max-width: 1140px;
+            }
+
+            html {
+                font-size: 10px;
+            }
+        }
+
+
+
+        .text-uppercase {
+            text-transform: uppercase;
+
+        }
+
+        /* NavBar */
+
+        nav {
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #2C3E4F;
+            color: white;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            position: fixed;
+            z-index: 500;
+        }
+
+        #logo-box {
+            float: left;
+            padding-top: 0.5rem;
+        }
+
+        #logo-box .logo {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+
+        #nav-links {
+            float: right;
+        }
+
+        #nav-links .nav-item {
+            float: left;
+            margin: 0.5rem;
+        }
+
+        #nav-links .nav-link {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            display: block;
+            padding: 1.6rem;
+            letter-spacing: 0.1rem;
+            transition: 0.3s;
+        }
+
+        #nav-links .nav-link:hover {
+            color: #1abc9b;
+        }
+
+        #nav-links .nav-icon {
+            display: none;
+        }
+
+        @media (max-width:992px) {
+            #logo-box {
+                float: none;
+                text-align: left;
+            }
+
+            #nav-links {
+                float: none;
+            }
+
+            #nav-links .nav-link {
+                font-size: 2rem;
+                padding-left: 0;
+
+            }
+
+            #nav-links .nav-item {
+                float: none;
+                text-align: left;
+            }
+
+            #nav-links .nav-icon {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 5px;
+                font-size: 3rem;
+            }
+
+            #nav-links.responsive li:not(:first-child)
+
+            /*Java Script kodu bu */
+                {
+                display: none;
+            }
+
+        }
+
+
+        /* Header */
+
+        header {
+            background-color: #404258;
+            height: 700px;
+            padding-top: calc(106px + 7rem);
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 6rem;
+
+        }
+
+        header h2 {
+            color: white;
+            font-size: 2.4rem;
+            font-family: "Lato";
+            font-weight: 300;
+        }
+
+        hr.star-light {
+            border-color: #fff;
+        }
+
+        hr.star-dark {
+            border-color: #2d3d4f;
+        }
+
+
+        .star-light,
+        .star-dark {
+            border: none;
+            border-top: 0.4rem solid #fff;
+            border-radius: 10px;
+            max-width: 25rem;
+            margin: 2.5rem auto;
+            overflow: visible;
+            height: 0;
+
+        }
+
+        .star-light::after,
+        .star-dark::after {
+            content: "\2605";
+            /* color: #fff; */
+            font-weight: 900;
+            font-size: 3.2rem;
+            position: relative;
+            top: -28px;
+            padding: 0 8px;
+            /* background-color: #1abc9b; */
+        }
+
+
+
+        .star-light-1::after {
+            color: #fff;
+            background-color: #404258;
+        }
+
+        .star-light-2::after {
+            color: #fff;
+            background-color: #474E68;
+        }
+
+        .star-dark-1::after {
+            color: #2d3d4f;
+            background-color: #50577A;
+        }
+
+        .star-dark-2::after {
+            color: #2d3d4f;
+            background-color: #6B728E;
+        }
+
+        /* Portfolio */
+        /* 
+#portfolio {
+    /* height: 600px; */
+
+        /* background-color: lightgray; 
+} */
+
+        #portfolio-images {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #portfolio h2 {
+            font-size: 4.8rem;
+            color: #2d3d4f;
+
+        }
+
+        .img-fluid-p {
+            width: 100%;
+            height: 100%;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .portfolio-item {
+            position: relative;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            border-radius: 13px;
+        }
+
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #1abc9b;
+            opacity: 0;
+            transition: opacity 0.3s;
+
+
+        }
+
+        .img-overlay .icon {
+            color: white;
+            font-size: 8rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .portfolio-item:hover .img-overlay {
+            opacity: 0.8;
+            border-radius: 13px;
+        }
+
+        /* About */
+
+        #about {
+            background-color: #474E68;
+            color: #fff;
+        }
+
+        #about h2 {
+            font-size: 4.8rem;
+        }
+
+        #about-text {
+            text-align: left;
+        }
+
+        #about-text .left {
+            float: none;
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 25px;
+
+        }
+
+        #about-text .right {
+            float: none;
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 25px;
+        }
+
+        #about-text .text {
+            font-size: 2rem;
+
+        }
+
+        @media (min-width:992px) {
+            #about-text .left {
+                float: left;
+                width: 50%;
+                padding-right: 10px;
+                padding-left: 210px;
+            }
+
+            #about-text .right {
+                float: right;
+                width: 50%;
+                padding-right: 210px;
+                padding-left: 10px;
+            }
+
+        }
+
+        /* Contant */
+
+
+        #contact {
+            background-color: #6B728E;
+        }
+
+        #contact h2 {
+            font-size: 4.8rem;
+            color: #2C3E50;
+        }
+
+        #contact-form {
+            width: 70%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-group {
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 3rem;
+            margin-bottom: 4rem;
+
+        }
+
+        .form-group input,
+        .form-group textarea {
+            border: none;
+            width: 100%;
+            display: block;
+            font-size: 2.4rem;
+        }
+
+        .form-group input:focus {
+            outline: 0;
+        }
+
+        .form-group textarea:focus {
+            outline: 0;
+        }
+
+
+
+        /* carousel*/
+
+        .corousel-slider {
+            background-color: #8E876B;
+            width: auto;
+            height: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .img-fluid-crs {
+
+            height: 200px;
+            width: 200px;
+        }
+
+
+        /* Footer */
+        footer {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            background-color: #2C3E4F;
+            color: white;
+            text-align: center;
+
+        }
+
+        footer h4 {
+            font-size: 2.4rem;
+        }
+
+        footer p {
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        footer li {
+            display: inline-block;
+            margin: 0.75rem;
+        }
+
+        .copyright {
+            background-color: #19262F;
+            padding-top: 2.4rem;
+            padding-bottom: 2.4rem;
+            color: #fff;
+            text-align: center;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="/" class="logo text-uppercase">
+                    Ahmet Alperen ALTUNDAL
+                </a>
+            </div>
+
+            <div id="nav-links" class="responsive">
+                <ul>
+                    <li class="nav-item text-uppercase nav-icon">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a href="#about" class="nav-link">
+                            About me
+                        </a>
+                    </li>
+                    <li class="nav-item text-uppercase">
+                        <a href="#portfolio" class="nav-link">
+                            certificates & courses
+                        </a>
+                    </li>
+
+                    <li class="nav-item text-uppercase">
+                        <a href="#footer" class="nav-link">
+                            Contact me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img id="profile-image" class="img-fluid" src="images/Ahmet_Alperen_altundal_foto1.jpg" alt="">
+            <h1 class="text-uppercase"> Ahmet Alperen ALTUNDAL</h1>
+            <hr class="star-light star-light-1">
+            <h2> </h2>
+
+        </div>
+    </header>
+    <section id="about">
+        <h2 class="text-uppercase">
+            About
+        </h2>
+        <hr class="star-light star-light-2">
+
+        <div id="about-text" class="clearfix">
+            <div class="left">
+                <p class="text">
+                    Hello, I'm Ahmet  myself.
+
+                </p>
+            </div>
+            <br><br>
+
+            <div class="right">
+                <p class="text">
+                    When thful life.
+                </p>
+            </div>
+
+        </div>
+
+        <button class="btn btn-outline btn-large">
+            <a href="https://github.com/AlperenAltundal/Html-Css/raw/main/Ahmet_Alperen_ALTUNDAL_cv.pdf">
+                <i class="fa-solid fa-download"></i>
+                Download Now!
+            </a>
+
+        </button>
+
+
+    </section>
+
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase">
+                my certificates & courses
+            </h2>
+            <hr class="star-dark star-dark-1">
+            <div id="portfolio-images " class="clearfix">
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a
+                            href="https://www.udemy.com/course/sifirdan-ileri-duzey-web-programlama-html-css-javascript/">
+                            <img class="img-fluid-p" src="images/srt1.jpg" alt="">
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="https://www.udemy.com/course/python-ile-makine-ogrenimi/">
+                            <img class="img-fluid-p" src="images/srt2.jpg" alt="">
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="https://www.udemy.com/course/derin-ogrenmeye-giris/">
+                            <img class="img-fluid-p" src="images/srt3.jpg" alt="">
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="https://www.udemy.com/course/c-baslangc-ve-ileri-duzey/">
+                            <img class="img-fluid-p" src="images/srt4.jpg" alt="">
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="https://www.udemy.com/course/unityoyun/">
+                            <img class="img-fluid-p" src="images/srt5.jpg" alt="">
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="portfolio-item">
+                        <a href="https://www.btkakademi.gov.tr/portal/course/python-ile-makine-ogrenmesi-11800">
+                            <img class="img-fluid-p" src="images/srt6.jpg" alt="">
+                            <div class="img-overlay">
+                                <div class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase">
+                my projects
+            </h2>
+            <hr class="star-dark star-dark-2">
+            <div class="corousel-slider">
+
+
+                <div>
+                    <a style="color: navy;" href="https://github.com/AlperenAltundal/Platform_Game_2D_Current">
+                        <h3> <u> Platform Game 2D </u> </h3>
+                    </a>
+
+                    <p>Unity oyun motoru üapmaya çalıştım.</p>
+
+                </div>
+
+                <br><br>
+
+                <div>
+                    <a style="color: navy;" href="https://github.com/AlperenAltundal/YoloV5-Custom-Model-Detection">
+                        <h3> <u> YOLOV5 İle F1 Marka Tespiti</u> </h3>
+                    </a>
+                    <p>YoloV5 kullanarak yapmış olduğumuz pr.</p>
+                </div>
+                <br><br>
+
+                <div>
+                    <a style="color: navy;" href="https://github.com/AlperenAltundal/YoloV5-Face-Detection-Tkinter-GUI">
+                        <h3> <u> YOLOV5 İle Yüz Kişisel Yüz tespiti & Tkinter Kütüphanesi ile UI</u> </h3>
+
+                    </a>
+                    <p>YoloV5 kullanarak yapmış olduğum projede yaklaşık 400 Adet kendi yüz
+                        fotoğrafımı kullanarak görsellerinin etiketlenmesi ve eğitilmesini yapılıp tkinter
+                        kütüphanesinden yararlanarak arayüz üzerinden kontrolü sağlanıp outputları
+                        arayüzde elde ediyorum.
+                    </p>
+                </div>
+                <br><br>
+                <h2>...</h2>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <div class="container clearfix">
+
+            <div class="col">
+                <h4 class="text-uppercase">
+                    If you want to contact me;
+                </h4>
+                <ul>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <a href="https://github.com/AlperenAltundal">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <a href="https://twitter.com/KEKSPEREN">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <a href="https://www.linkedin.com/in/ahmet-alperen-altundal-b26737236/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <a href="https://www.instagram.com/aalperena_/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
+
 </html>

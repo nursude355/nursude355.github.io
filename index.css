@@ -545,7 +545,7 @@ hr.star-dark {
 }
 
 
-.footer {
+footer {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: #2C3E4F;
@@ -554,16 +554,15 @@ hr.star-dark {
 
 }
 
-.footer h4 {
+footer h4 {
     font-size: 2.4rem;
 }
 
-.footer p {
+footer p {
     font-size: 2rem;
     margin-top: 1rem;
 }
-
-.footer li {
+footer li {
     display: inline-block;
     margin-right: 10px;
 }

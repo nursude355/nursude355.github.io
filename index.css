@@ -33,7 +33,9 @@ a {
     text-decoration: none;
 }
 
-
+ul {
+    list-style-type: none;
+        }
 
 section {
     padding-top: 10rem;

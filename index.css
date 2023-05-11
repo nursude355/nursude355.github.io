@@ -33,9 +33,14 @@ a {
     text-decoration: none;
 }
 
-ul {
+/* ul {
     list-style-type: none;
-        }
+        } */
+
+li {
+ display: inline-block;
+ margin-right: 20px;
+}
 
 section {
     padding-top: 10rem;

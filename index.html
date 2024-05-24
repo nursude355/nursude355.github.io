@@ -102,9 +102,21 @@
 
         </button>
 
-
     </section>
+    
+    <script>
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
 
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('paste', function(e) {
+        e.preventDefault();
+    });
+</script>
 
     <section id="portfolio">
         <div class="container">
@@ -117,7 +129,7 @@
                 <div class="col">
                     <div class="portfolio-item">
                         
-                            <img class="img-fluid-p" src="images/4.jpg" alt="">
+                            <img class="img-fluid-p" src="images/4.jpg" style="width: 500px; height: auto; alt="">
                             <div class="img-overlay">
                                 <div class="icon">
                                 </div>
@@ -286,7 +298,7 @@
                     </li>
                  
                 </ul>  
-                <a href="mailto:kara36sude@gmail.com">To contact me via e-mail:</a>
+                <a href="mailto:kara36sude@gmail.com">Click here to contact me via e-mail</a>
             </div>
         </div>
     </footer>
